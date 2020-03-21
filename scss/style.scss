@@ -88,9 +88,10 @@
     width: 60%;
 
     a {
-      color: white;
+      color: rgb(110, 106, 106);
     }
 
+    /* Refactor this, decrease to 3th level */
     .sidebar__links {
       li {
         border-bottom: 1px solid rgba($color: #000000, $alpha: 50%);

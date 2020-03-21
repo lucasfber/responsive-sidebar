@@ -93,9 +93,10 @@ a {
   transition: transform 0.5s 100ms ease;
   transform: translateX(-100%);
   width: 60%;
+  /* Refactor this, decrease to 3th level */
 }
 .sidebar__content a {
-  color: white;
+  color: #6e6a6a;
 }
 .sidebar__content .sidebar__links li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
