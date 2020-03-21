@@ -1,0 +1,143 @@
+@import "resets/reset";
+@import "colors";
+
+.btn-wrapper {
+  background-color: $primary-blue;
+  left: 0;
+  min-height: 46px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  .btn-menu,
+  .btn-close {
+    cursor: pointer;
+    display: inline-block;
+    padding: .4rem .4rem .2rem .4rem;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    
+    i {
+      font-size: 1.5rem;
+    }
+
+    &.hide {
+      display: none;
+    }
+  }
+
+  .btn-menu {
+    color: #ccc;
+  }
+
+  .btn-close {
+    color: #ccc;
+    z-index: 3;
+  }
+
+  &.transparent {
+    background-color: transparent;
+  }
+}
+
+// === SIDEBAR === 
+.sidebar {
+  background-color: rgba($color: #000000, $alpha: 90%);
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity .3s ease-in;
+  width: 100vw;
+  z-index: 1;
+
+  &__header {
+    background-color: $grissaily;
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    
+    p {
+      margin-top: .5rem;
+    }
+
+    .img-rounded {
+      border-radius: 50%;
+      height: auto;
+      width: 56px;
+    }
+
+    .user-name {
+      font-weight: bold;
+    }
+
+    .user-email {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__content {
+    background-color: $primary-blue;
+    color: #fff;
+    height: 100%;
+    transition: transform .5s 100ms ease;
+    transform: translateX(-100%);
+    width: 60%;
+
+    a {
+      color: white;
+    }
+
+    .sidebar__links {
+      li {
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 50%);
+        transition: all .5s ease;
+
+        &:hover {
+          background-color: lighten($primary-blue, 5%);
+        }
+      }
+
+      a {
+        display: block;
+        margin-right: .5rem;
+        padding: 1rem;
+
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &.open {
+    opacity: 1;
+
+    .sidebar__content {
+      transform: translateX(0);
+    }
+  }
+}
+
+main {
+  align-items: center;
+  background-color: #ddd;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 46px 1rem 1rem 1rem;
+
+  h1 {
+    color: #ababab;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+
+@import "tablets";
+@import "desktop";

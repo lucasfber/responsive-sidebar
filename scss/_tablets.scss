@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) {
+
+  main {
+    padding-top: 58px;
+  }
+
+  .btn-wrapper {
+    height: 58px;
+  
+    .btn-menu,
+    .btn-close {
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .sidebar__header {
+    padding: 1.5rem;
+    
+    .img-rounded {
+      width: 7rem;
+    }
+
+    .user-name {
+      font-size: 1.5rem;
+    }
+
+    .user-email {
+      font-size: 1rem;
+    }
+  }
+
+  .sidebar__links {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  main {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

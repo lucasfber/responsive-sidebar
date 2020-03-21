@@ -1,0 +1,61 @@
+@media screen and (min-width: 1280px) {
+
+  .btn-wrapper {
+    background-color: transparent;
+
+    .btn-menu, .btn-close {      
+      color: #fff;
+      top: 10px;
+      right: 10px; 
+    }
+
+    .btn-menu {
+      background-color: #2f3542eb;
+      border-radius: 2px;
+
+      i {
+        font-size: 1.2rem;
+      }
+    }
+
+    .btn-close {
+      i {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .sidebar {
+
+    &__content {
+      width: 300px;
+    }
+
+    &__header {
+
+      .img-rounded {
+        width: 100px;
+      }
+
+      .user-name {
+        font-size: 20px;
+      }
+
+      .user-email {
+        font-size: 1rem;
+      }
+    }
+
+    &__links {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  main {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
