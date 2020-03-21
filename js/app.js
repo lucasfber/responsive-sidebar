@@ -1,7 +1,7 @@
-let btnMenu = document.querySelector(".btn-menu")
-let btnClose = document.querySelector(".btn-close")
-let sidebar = document.querySelector(".sidebar")
-let btnWrapper = document.querySelector(".btn-wrapper")
+const btnMenu = document.querySelector(".btn-menu")
+const btnClose = document.querySelector(".btn-close")
+const sidebar = document.querySelector(".sidebar")
+const btnWrapper = document.querySelector(".btn-wrapper")
 
 btnClose.addEventListener("click", () => {
   btnClose.classList.toggle("hide")
